@@ -1,0 +1,26 @@
+    table {
+        width: 50%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+    button {
+        padding: 5px 10px;
+        margin: 10px;
+    }
+
+    #addItemBtn {
+        display: block;
+        margin: 20px auto;
+    }
