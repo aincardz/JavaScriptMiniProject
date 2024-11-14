@@ -1,13 +1,13 @@
 const express = require('express');
-const cors = require('cors'); // Dodajemy CORS dla połączenia z frontendu
+const cors = require('cors'); 
 const app = express();
 const port = 3000;
 
-// Środkowa warstwa pozwalająca na parsowanie JSON i obsługę CORS
+
 app.use(express.json());
 app.use(cors());
 
-// Przechowywanie danych w pamięci
+
 let receipt = [];
 
 // Endpoint GET - Pobranie wszystkich pozycji
@@ -47,10 +47,10 @@ app.delete('/api/receipt/:index', (req, res) => {
   }
 });
 
-// Serwowanie plików statycznych z folderu 'public'
+
 app.use(express.static('public'));
 
-// Uruchomienie serwera
+
 app.listen(port, () => {
   console.log(`Serwer działa na http://localhost:${port}`);
 });
